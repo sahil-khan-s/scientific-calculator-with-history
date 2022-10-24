@@ -13,13 +13,14 @@
 
 <body class="bg-blue-100">
     <div>
-        <h1 class="text-3xl  text-center font-bold text-blue-600 mt-16">Calculator Using Javascript :</h1>
+        <h1 class="text-2xl  text-center font-bold text-blue-600 mt-6">Calculator Using Javascript :</h1>
     </div>
 
-    <div class="formstyle w-[300px] h-[400px] mx-auto border-2 pl-3 mt-10 border-black bg-gray-500">
+    <div class="formstyle w-[300px] h-[500px] mx-auto border-2 pl-3 mt-4 border-black bg-gray-500">
 
         <form action="" name="form1">
-            <input class="textview  mt-5 h-10 ml-2 w-[255px] h-[50px] rounded-xl bg-purple-200 pl-3 border-2" name="textview" placeholder="00">
+            <input class="textview  mt-5 h-10 ml-2 w-[255px] h-[50px] rounded-xl bg-purple-200 pl-3 border-2"
+                name="textview" placeholder="00">
 
         </form>
 
@@ -27,85 +28,155 @@
 
             <tr>
                 <td class="">
-                    <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-red-600 text-white rounded-full hover:cursor-pointer" type="button" value="C" onclick="form1.textview.value=''">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-red-600 text-white rounded-full hover:cursor-pointer"
+                        type="button" value="C" onclick="form1.textview.value=''">
                 </td>
                 <td>
-                    <input class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg hover:cursor-pointer " type="button" value="B" onclick="backspace()">
+                    <input
+                        class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg hover:cursor-pointer "
+                        type="button" value="<--" onclick="backspace()">
                 </td>
                 <td>
-                    <input class=" btn w-[50px] h-[50px] text-[20px] mx-2 mx-2 bg-blue-600 text-white rounded-lg  hover:cursor-pointer" type="button" value="/" onclick="insert('/')">
+                    <input
+                        class=" btn w-[50px] h-[50px] text-[20px] mx-2 mx-2 bg-blue-600 text-white rounded-lg  hover:cursor-pointer"
+                        type="button" value="/" onclick="insert('/')">
                 </td>
                 <td>
-                    <input class=" btn w-[50px] h-[50px] text-[20px] mx-2 mx-2 bg-blue-600 text-white rounded-lg hover:cursor-pointer" type="button" value="x" onclick="insert('*')">
+                    <input
+                        class=" btn w-[50px] h-[50px] text-[20px] mx-2 mx-2 bg-blue-600 text-white rounded-lg hover:cursor-pointer"
+                        type="button" value="x" onclick="insert('*')">
                 </td>
-               
-            </tr>
-                <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px]  my-1 mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="1" onclick="insert(1)">
-                </td>
-                <td>
-                    <input class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="2" onclick="insert(2)">
-                </td>
-                <td>
-                    <input class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="3" onclick="insert(3)">
-                </td>
-                <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg text-white hover:cursor-pointer" type="button" value="-" onclick="insert('-')">
-                </td>
-               
-               
-            </tr>
 
-           
-
-            
+            </tr>
+            <td>
+                <input
+                    class="btn w-[50px] h-[50px] text-[20px]  my-1 mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                    type="button" value="1" onclick="insert(1)">
+            </td>
+            <td>
+                <input
+                    class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                    type="button" value="2" onclick="insert(2)">
+            </td>
+            <td>
+                <input
+                    class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                    type="button" value="3" onclick="insert(3)">
+            </td>
+            <td>
+                <input
+                    class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg text-white hover:cursor-pointer"
+                    type="button" value="-" onclick="insert('-')">
+            </td>
+            </tr>
             <tr>
                 <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px]  my-1 mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="4" onclick="insert(4)">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px]  my-1 mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="4" onclick="insert(4)">
                 </td>
                 <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="5" onclick="insert(5)">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="5" onclick="insert(5)">
                 </td>
                 <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="6" onclick="insert(6)">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="6" onclick="insert(6)">
                 </td>
                 <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg text-white hover:cursor-pointer" type="button" value="+" onclick="insert('+')">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="+" onclick="insert('+')">
                 </td>
             </tr>
             <tr class="">
                 <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px] my-1 mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="7" onclick="insert(7)">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] my-1 mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="7" onclick="insert(7)">
                 </td>
                 <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="8" onclick="insert(8)">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="8" onclick="insert(8)">
                 </td>
                 <td>
-                    <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="9" onclick="insert(9)">
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="9" onclick="insert(9)">
                 </td>
-               
                 <td>
-                    <input class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-red-600 text-white rounded-full text-white  hover:cursor-pointer" type="button" value="=" onclick="equal()">
+                    <input
+                        class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-red-600 text-white rounded-full text-white  hover:cursor-pointer"
+                        type="button" value="=" onclick="equal()">
                 </td>
             </tr>
-               
-<tr>
+            <tr>
+                <td colspan="2">
+                    <input
+                        class="btn w-[118px]  h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="0 " onclick="insert(0)">
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="." onclick="insert('.')">
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-700 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="%" onclick="insert('%')">
+                </td>
+            </tr>
+            <tr >
+                <td class="pt-1">
+                    <input
+                        class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-yellow-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="( " onclick="insert('&#40;')">
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-yellow-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value=")" onclick="insert('&#41;' )">
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-yellow-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="&radic;" onclick=sqrt()>
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-yellow-700 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="x&#50;" onclick="square()">
+                </td>
+            </tr>
 
-    <td colspan="2">
-        <input class="btn w-[118px]  h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="0 " onclick="insert(0)">
-    </td>
-    <td>
-        <input class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="." onclick="insert('.')">
-    </td>
-    <td>
-        <input class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer" type="button" value="00" onclick="insert(00)">
-    </td>
-</tr>
-
+            <tr >
+                <td class="pt-1">
+                    <input
+                        class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-green-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="ln" onclick=ln()>
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-green-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="cos" onclick=cos()>
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-green-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="sin" onclick=sin()>
+                </td>
+                <td>
+                    <input
+                        class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-green-800 rounded-lg text-white hover:cursor-pointer"
+                        type="button" value="tan" onclick=tan() >
+                </td>
+            </tr>
         </table>
-
     </div>
-
 </body>
-
 </html>
