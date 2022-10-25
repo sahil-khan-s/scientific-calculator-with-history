@@ -13,13 +13,13 @@
 
 <body class="bg-blue-100">
     <div>
-        <h1 class="text-2xl  text-center font-bold text-blue-600 mt-6">Calculator Using Javascript :</h1>
+        <h1 class="text-2xl  text-center font-bold text-blue-600 mt-2">Calculator Using Javascript :</h1>
     </div>
 
-    <div class="formstyle w-[300px] h-[500px] mx-auto border-2 pl-3 mt-4 border-black bg-gray-500">
+    <div class="formstyle w-[300px] h-[500px] mx-auto border-2 pl-3 mt-2 border-black bg-gray-500">
 
         <form action="" name="form1">
-            <input class="textview  mt-5 h-10 ml-2 w-[255px] h-[50px] rounded-xl bg-purple-200 pl-3 border-2"
+            <input pattern="^-?\d+\.?\d+[-+*\/]-?\d+\.?\d+$" class="textview  mt-5 h-10 ml-2 w-[255px] h-[50px] rounded-xl bg-purple-200 pl-3 border-2"
                 name="textview" placeholder="00">
 
         </form>
@@ -40,7 +40,7 @@
                 <td>
                     <input
                         class=" btn w-[50px] h-[50px] text-[20px] mx-2 mx-2 bg-blue-600 text-white rounded-lg  hover:cursor-pointer"
-                        type="button" value="/" onclick="insert('/')">
+                        type="button" value="&#8725;" onclick="insert('/')">
                 </td>
                 <td>
                     <input
@@ -56,8 +56,8 @@
             </td>
             <td>
                 <input
-                    class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
-                    type="button" value="2" onclick="insert(2)">
+                class=" btn w-[50px] h-[50px] text-[20px] mx-2 bg-gray-800 rounded-lg text-white hover:cursor-pointer"
+                type="button" value="2" onclick="insert(2)">
             </td>
             <td>
                 <input
@@ -65,8 +65,8 @@
                     type="button" value="3" onclick="insert(3)">
             </td>
             <td>
-                <input
-                    class="btn w-[50px] h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg text-white hover:cursor-pointer"
+                <input id="minuss"
+                    class="btn w-[50px]  h-[50px] text-[20px] mx-2 bg-blue-600 text-white rounded-lg text-white hover:cursor-pointer"
                     type="button" value="-" onclick="insert('-')">
             </td>
             </tr>
